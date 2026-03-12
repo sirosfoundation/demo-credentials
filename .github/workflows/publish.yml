@@ -1,4 +1,4 @@
-name: Publish VCTM Registry
+name: Update VCTM Branch
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  publish:
+  update-vctm:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
