@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "generated": "2026-03-13T10:14:23Z",
+  "repository": {
+    "url": "https://github.com/sirosfoundation/demo-credentials",
+    "owner": "sirosfoundation",
+    "name": "demo-credentials",
+    "branch": "main",
+    "commit": "a91eb621c828addecb8815fffa3df7a56d3ee6b0"
+  },
+  "credentials": [
+    {
+      "vct": "urn:demo:1",
+      "name": "Simple demo credential",
+      "source_file": "vctm_demo_1.json",
+      "vctm_file": "vctm_demo_1.vctm.json",
+      "last_modified": "2026-03-13T11:13:54+01:00",
+      "commit_history": [
+        {
+          "sha": "a91eb621c828addecb8815fffa3df7a56d3ee6b0",
+          "message": "fix 2",
+          "author": "Leif Johansson",
+          "date": "2026-03-13T11:13:54+01:00"
+        }
+      ]
+    },
+    {
+      "vct": "urn:eudi:diploma:1",
+      "name": "Diploma Credential",
+      "source_file": "vctm_diploma.json",
+      "vctm_file": "vctm_diploma.vctm.json",
+      "last_modified": "2026-03-13T11:13:54+01:00",
+      "commit_history": [
+        {
+          "sha": "a91eb621c828addecb8815fffa3df7a56d3ee6b0",
+          "message": "fix 2",
+          "author": "Leif Johansson",
+          "date": "2026-03-13T11:13:54+01:00"
+        }
+      ]
+    },
+    {
+      "vct": "urn:eudi:ehic:1",
+      "name": "DC4EU EHIC SD-JWT VCTM",
+      "source_file": "vctm_ehic.json",
+      "vctm_file": "vctm_ehic.vctm.json",
+      "last_modified": "2026-03-13T11:13:54+01:00",
+      "commit_history": [
+        {
+          "sha": "a91eb621c828addecb8815fffa3df7a56d3ee6b0",
+          "message": "fix 2",
+          "author": "Leif Johansson",
+          "date": "2026-03-13T11:13:54+01:00"
+        }
+      ]
+    },
+    {
+      "vct": "urn:eudi:pid:arf-1.5:1",
+      "name": "Example ARF 1.5 PID SD-JWT VCTM",
+      "source_file": "vctm_pid_arf_1_5.json",
+      "vctm_file": "vctm_pid_arf_1_5.vctm.json",
+      "last_modified": "2026-03-13T11:13:54+01:00",
+      "commit_history": [
+        {
+          "sha": "a91eb621c828addecb8815fffa3df7a56d3ee6b0",
+          "message": "fix 2",
+          "author": "Leif Johansson",
+          "date": "2026-03-13T11:13:54+01:00"
+        }
+      ]
+    }
+  ]
+}
