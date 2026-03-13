@@ -4,6 +4,8 @@
   "description": "A demonstration verifiable credential for identity verification.",
   "display": [
     {
+      "name": "Simple demo credential",
+      "locale": "en_US",
       "rendering": {
         "simple": {
           "background_color": "#1a365d",
