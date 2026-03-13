@@ -27,4 +27,4 @@ jobs:
         run: go install github.com/sirosfoundation/mtcvctm/cmd/mtcvctm@v1.6.0
 
       - name: Publish VCTM files to vctm branch
-        run: mtcvctm publish-vctm --input ./vctm --output ./dist --github-action --vctm-branch vctm
+        run: mtcvctm publish-vctm --input ./vctm --output ./dist --github-action --vctm-branch vctm --inline-images
