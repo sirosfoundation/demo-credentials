@@ -26,5 +26,10 @@ jobs:
       - name: Install mtcvctm
         run: go install github.com/sirosfoundation/mtcvctm/cmd/mtcvctm@v1.8.0
 
+      - name: Copy supplementary files to output
+        run: |
+          mkdir -p ./dist
+          cp -v vctm/*.md ./dist/ 2>/dev/null || true
+
       - name: Publish VCTM files to vctm branch
         run: mtcvctm publish-vctm --input ./vctm --output ./dist --github-action --vctm-branch vctm --inline-images
