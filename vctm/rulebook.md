@@ -13,6 +13,7 @@ for testing and development purposes.
 | Diploma | Substantial | cnf |
 | EHIC | High | cnf |
 | PID (ARF 1.5) | High | cnf |
+| PID (Rulebook 1.5) | High | cnf |
 
 ## Issuance Policy
 
