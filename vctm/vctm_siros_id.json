@@ -1,0 +1,138 @@
+{
+  "vct": "https://registry.siros.org/sirosfoundation/vctm_siros_id.json",
+  "name": "Siros ID",
+  "description": "A personal identity document issued by the Siros Foundation.",
+  "$comment": "",
+  "display": [
+    {
+      "locale": "en-US",
+      "name": "Siros ID",
+      "description": "Personal identity document issued by the Siros Foundation.",
+      "rendering": {
+        "simple": {
+          "logo": {
+            "uri": "https://raw.githubusercontent.com/dc4eu/vc/d5bcc09ad66fb8491d0694f48d60371fc6ac9e04/images/generic-diploma-card-svg-dc4eu-01.svg",
+            "uri#integrity": "sha256-wLet7Ra2LR80J8oXFR9aoB902q8va1eSRhO0JA6apG8"
+          },
+          "background_color": "#1a365d",
+          "text_color": "#ffffff"
+        },
+        "svg_templates": [
+          {
+            "uri": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODU2IiBoZWlnaHQ9IjU0MCIgdmlld0JveD0iMCAwIDg1NiA1NDAiPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJwb3J0cmFpdC1jbGlwIj4KICAgICAgPHJlY3QgeD0iNDAiIHk9Ijk2IiB3aWR0aD0iMTUyIiBoZWlnaHQ9IjE5MiIgcng9IjgiIHJ5PSI4Ii8+CiAgICA8L2NsaXBQYXRoPgogIDwvZGVmcz4KCiAgPCEtLSBDYXJkIGJhY2tncm91bmQgLS0+CiAgPHJlY3Qgd2lkdGg9Ijg1NiIgaGVpZ2h0PSI1NDAiIHJ4PSIyNCIgcnk9IjI0IiBmaWxsPSIjMWEzNjVkIi8+CgogIDwhLS0gVG9wIGFjY2VudCBiYXIgLS0+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijg1NiIgaGVpZ2h0PSI3MiIgcng9IjI0IiByeT0iMjQiIGZpbGw9IiMwZjI0NDQiLz4KICA8cmVjdCB4PSIwIiB5PSI0OCIgd2lkdGg9Ijg1NiIgaGVpZ2h0PSIyNCIgZmlsbD0iIzBmMjQ0NCIvPgoKICA8IS0tIENhcmQgdGl0bGUgLS0+CiAgPHRleHQgeD0iNDgiIHk9IjQ4IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiIGxldHRlci1zcGFjaW5nPSI0Ij5TSVJPUyBJRDwvdGV4dD4KCiAgPCEtLSBQb3J0cmFpdCBib3ggKGZhbGxiYWNrIGZpbGwpIC0tPgogIDxyZWN0IHg9IjQwIiB5PSI5NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxOTIiIHJ4PSI4IiByeT0iOCIgZmlsbD0iIzBmMjQ0NCIvPgogIDwhLS0gUG9ydHJhaXQgaW1hZ2UgLS0+CiAgPGltYWdlIHg9IjQwIiB5PSI5NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxOTIiIGhyZWY9Int7cG9ydHJhaXR9fSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiIGNsaXAtcGF0aD0idXJsKCNwb3J0cmFpdC1jbGlwKSIvPgoKICA8IS0tIEdpdmVuIG5hbWUgLS0+CiAgPHRleHQgeD0iMjE2IiB5PSIxMTgiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjODlhYWNjIiBsZXR0ZXItc3BhY2luZz0iMSI+R0lWRU4gTkFNRTwvdGV4dD4KICA8dGV4dCB4PSIyMTYiIHk9IjE0MiIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIj57e2dpdmVuX25hbWV9fTwvdGV4dD4KCiAgPCEtLSBGYW1pbHkgbmFtZSAtLT4KICA8dGV4dCB4PSIyMTYiIHk9IjE3NCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM4OWFhY2MiIGxldHRlci1zcGFjaW5nPSIxIj5GQU1JTFkgTkFNRTwvdGV4dD4KICA8dGV4dCB4PSIyMTYiIHk9IjE5OCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIj57e2ZhbWlseV9uYW1lfX08L3RleHQ+CgogIDwhLS0gRGF0ZSBvZiBiaXJ0aCAtLT4KICA8dGV4dCB4PSIyMTYiIHk9IjIzMCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM4OWFhY2MiIGxldHRlci1zcGFjaW5nPSIxIj5EQVRFIE9GIEJJUlRIPC90ZXh0PgogIDx0ZXh0IHg9IjIxNiIgeT0iMjU0IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiPnt7YmlydGhfZGF0ZX19PC90ZXh0PgoKICA8IS0tIE5hdGlvbmFsaXR5IC0tPgogIDx0ZXh0IHg9IjU2MCIgeT0iMTE4IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzg5YWFjYyIgbGV0dGVyLXNwYWNpbmc9IjEiPk5BVElPTkFMSVRZPC90ZXh0PgogIDx0ZXh0IHg9IjU2MCIgeT0iMTQyIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiPnt7bmF0aW9uYWxpdHl9fTwvdGV4dD4KCiAgPCEtLSBTZXggLS0+CiAgPHRleHQgeD0iNTYwIiB5PSIxNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjODlhYWNjIiBsZXR0ZXItc3BhY2luZz0iMSI+U0VYPC90ZXh0PgogIDx0ZXh0IHg9IjU2MCIgeT0iMTk4IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiPnt7c2V4fX08L3RleHQ+CgogIDwhLS0gRGl2aWRlciAtLT4KICA8bGluZSB4MT0iNDAiIHkxPSIzMTYiIHgyPSI4MTYiIHkyPSIzMTYiIHN0cm9rZT0iIzg5YWFjYyIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2Utb3BhY2l0eT0iMC40Ii8+CgogIDwhLS0gRG9jdW1lbnQgbnVtYmVyIC0tPgogIDx0ZXh0IHg9IjQwIiB5PSIzNDgiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjODlhYWNjIiBsZXR0ZXItc3BhY2luZz0iMSI+RE9DVU1FTlQgTlVNQkVSPC90ZXh0PgogIDx0ZXh0IHg9IjQwIiB5PSIzNzIiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZmZmZiI+e3tkb2N1bWVudF9udW1iZXJ9fTwvdGV4dD4KCiAgPCEtLSBJc3N1aW5nIGNvdW50cnkgLS0+CiAgPHRleHQgeD0iMzIwIiB5PSIzNDgiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjODlhYWNjIiBsZXR0ZXItc3BhY2luZz0iMSI+SVNTVUlORyBDT1VOVFJZPC90ZXh0PgogIDx0ZXh0IHg9IjMyMCIgeT0iMzcyIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiPnt7aXNzdWluZ19jb3VudHJ5fX08L3RleHQ+CgogIDwhLS0gRXhwaXJ5IGRhdGUgLS0+CiAgPHRleHQgeD0iNTYwIiB5PSIzNDgiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjODlhYWNjIiBsZXR0ZXItc3BhY2luZz0iMSI+RVhQSVJZIERBVEU8L3RleHQ+CiAgPHRleHQgeD0iNTYwIiB5PSIzNzIiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZmZmZiI+e3tleHBpcnlfZGF0ZX19PC90ZXh0PgoKICA8IS0tIEJvdHRvbSBiYXIgLS0+CiAgPHJlY3QgeD0iMCIgeT0iNDYwIiB3aWR0aD0iODU2IiBoZWlnaHQ9IjQwIiBmaWxsPSIjMGYyNDQ0Ii8+CiAgPHJlY3QgeD0iMCIgeT0iNDg0IiB3aWR0aD0iODU2IiBoZWlnaHQ9IjU2IiByeD0iMjQiIHJ5PSIyNCIgZmlsbD0iIzBmMjQ0NCIvPgoKICA8IS0tIEJvdHRvbSB0ZXh0IC0tPgogIDx0ZXh0IHg9IjQ4IiB5PSI1MTAiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjODlhYWNjIiBsZXR0ZXItc3BhY2luZz0iMiI+U0lST1MgRk9VTkRBVElPTiDCtyBzaXJvcy5vcmc8L3RleHQ+Cjwvc3ZnPgo="
+          }
+        ]
+      }
+    }
+  ],
+  "claims": [
+    {
+      "path": ["given_name"],
+      "sd": "always",
+      "svg_id": "given_name",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "First name",
+          "description": "Current first name(s), including middle name(s) if applicable."
+        }
+      ]
+    },
+    {
+      "path": ["family_name"],
+      "sd": "always",
+      "svg_id": "family_name",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Last name",
+          "description": "Current last name(s) or surname(s)."
+        }
+      ]
+    },
+    {
+      "path": ["birth_date"],
+      "sd": "always",
+      "svg_id": "birth_date",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Date of birth",
+          "description": "Full birth date (day, month, year)."
+        }
+      ]
+    },
+    {
+      "path": ["nationality"],
+      "sd": "always",
+      "svg_id": "nationality",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Nationality",
+          "description": "Country or countries of nationality (two-letter ISO 3166-1 alpha-2 code)."
+        }
+      ]
+    },
+    {
+      "path": ["sex"],
+      "sd": "always",
+      "svg_id": "sex",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Sex",
+          "description": "Recorded sex using ISO 5218 codes (1 = male, 2 = female, 0 = not known, 9 = not applicable)."
+        }
+      ]
+    },
+    {
+      "path": ["portrait"],
+      "sd": "always",
+      "svg_id": "portrait",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Portrait",
+          "description": "Portrait photograph of the document holder."
+        }
+      ]
+    },
+    {
+      "path": ["document_number"],
+      "sd": "always",
+      "svg_id": "document_number",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Document number",
+          "description": "Unique identifier of the identity document."
+        }
+      ]
+    },
+    {
+      "path": ["issuing_country"],
+      "sd": "never",
+      "svg_id": "issuing_country",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Issuing country",
+          "description": "Country where the document was issued (two-letter ISO 3166-1 alpha-2 code)."
+        }
+      ]
+    },
+    {
+      "path": ["expiry_date"],
+      "sd": "never",
+      "svg_id": "expiry_date",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Expiry date",
+          "description": "End date of the document's validity."
+        }
+      ]
+    }
+  ]
+}
