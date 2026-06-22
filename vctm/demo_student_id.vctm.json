@@ -1,0 +1,140 @@
+{
+  "vct": "https://registry.siros.org/sirosfoundation/demo_student_id.vctm.json",
+  "name": "Student ID",
+  "description": "Demo credential for a student ID card",
+  "display": [
+    {
+      "locale": "en-US",
+      "name": "Student ID",
+      "description": "Demo credential for a student ID card",
+      "rendering": {
+        "simple": {
+          "background_color": "#F09B3C",
+          "text_color": "#36306F"
+        },
+        "svg_templates": [
+          {
+            "uri": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzY1IiBoZWlnaHQ9IjI0MyIgdmlld0JveD0iMCAwIDM2NSAyNDMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjAuNzUiIHk9IjAuNzUiIHdpZHRoPSIzNjMuNSIgaGVpZ2h0PSIyNDEuNSIgcng9IjE0LjI1IiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfNTQ5XzE0NikiIHN0cm9rZT0iI0JEQkRCRCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPHJlY3QgeD0iMTIiIHk9IjExIiB3aWR0aD0iMzQyIiBoZWlnaHQ9IjQ3IiByeD0iOCIgZmlsbD0iI0YwOUIzQyIvPgo8dGV4dCBmaWxsPSIjMzYzMDZGIiBzdHlsZT0id2hpdGUtc3BhY2U6IHByZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCIgbGV0dGVyLXNwYWNpbmc9IjBlbSI+PHRzcGFuIHg9IjI0IiB5PSI0Ni4zMTM1Ij57e3NjaG9vbF9uYW1lfX08L3RzcGFuPjwvdGV4dD4KPHRleHQgZmlsbD0iIzM2MzA2RiIgc3R5bGU9IndoaXRlLXNwYWNlOiBwcmUiIHhtbDpzcGFjZT0icHJlc2VydmUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxldHRlci1zcGFjaW5nPSIwLjE0ZW0iPjx0c3BhbiB4PSIyNCIgeT0iMzAuODUzNSI+RElHSVRBTCBTVFVERU5UIElEPC90c3Bhbj48L3RleHQ+Cjx0ZXh0IGZpbGw9IiMwQzBFMTEiIHN0eWxlPSJ3aGl0ZS1zcGFjZTogcHJlIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iMGVtIj48dHNwYW4geD0iMTg0IiB5PSIxMDguMzEzIj57e3N0dWRlbnRfbnVtYmVyfX08L3RzcGFuPjwvdGV4dD4KPHRleHQgZmlsbD0iIzBDMEUxMSIgc3R5bGU9IndoaXRlLXNwYWNlOiBwcmUiIHhtbDpzcGFjZT0icHJlc2VydmUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI5IiBsZXR0ZXItc3BhY2luZz0iMGVtIj48dHNwYW4geD0iMTg0IiB5PSI5NC4xMjAxIj5TdHVkZW50IG51bWJlcjwvdHNwYW4+PC90ZXh0Pgo8dGV4dCBmaWxsPSIjMEMwRTExIiBzdHlsZT0id2hpdGUtc3BhY2U6IHByZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjkiIGxldHRlci1zcGFjaW5nPSIwZW0iPjx0c3BhbiB4PSIyNC4zOTY5IiB5PSI5NC4xMjAxIj5GdWxsIG5hbWU8L3RzcGFuPjwvdGV4dD4KPHRleHQgZmlsbD0iYmxhY2siIHN0eWxlPSJ3aGl0ZS1zcGFjZTogcHJlIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iMGVtIj48dHNwYW4geD0iMjQiIHk9IjEwOC4zMTMiPnt7Z2l2ZW5fbmFtZX19ICYjMTA7PC90c3Bhbj48dHNwYW4geD0iMjQiIHk9IjEyMS4zMTMiPnt7ZmFtaWx5X25hbWV9fTwvdHNwYW4+PC90ZXh0Pgo8cmVjdCB4PSIxMiIgeT0iMTk0IiB3aWR0aD0iMzQyIiBoZWlnaHQ9IjM4IiByeD0iOCIgZmlsbD0iIzU1NkY4QSIvPgo8dGV4dCBmaWxsPSJ3aGl0ZSIgc3R5bGU9IndoaXRlLXNwYWNlOiBwcmUiIHhtbDpzcGFjZT0icHJlc2VydmUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9ImJvbGQiIGxldHRlci1zcGFjaW5nPSIwZW0iPjx0c3BhbiB4PSIyNCIgeT0iMjIxLjMxMyI+e3tpc3N1ZXJfbmFtZX19PC90c3Bhbj48L3RleHQ+Cjx0ZXh0IGZpbGw9IndoaXRlIiBzdHlsZT0id2hpdGUtc3BhY2U6IHByZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjkiIGxldHRlci1zcGFjaW5nPSIwZW0iPjx0c3BhbiB4PSIyNCIgeT0iMjA4LjEyIj5Jc3N1ZWQgYnk8L3RzcGFuPjwvdGV4dD4KPHRleHQgZmlsbD0id2hpdGUiIHN0eWxlPSJ3aGl0ZS1zcGFjZTogcHJlIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iMGVtIj48dHNwYW4geD0iMjU1IiB5PSIyMjEuMzEzIj57e2V4cGlyeV9kYXRlfX08L3RzcGFuPjwvdGV4dD4KPHRleHQgZmlsbD0id2hpdGUiIHN0eWxlPSJ3aGl0ZS1zcGFjZTogcHJlIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOSIgbGV0dGVyLXNwYWNpbmc9IjBlbSI+PHRzcGFuIHg9IjI1NSIgeT0iMjA4LjEyIj5WYWxpZCB1bnRpbDwvdHNwYW4+PC90ZXh0Pgo8dGV4dCBmaWxsPSIjMEMwRTExIiBzdHlsZT0id2hpdGUtc3BhY2U6IHByZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCIgbGV0dGVyLXNwYWNpbmc9IjBlbSI+PHRzcGFuIHg9IjI0IiB5PSIxNjMuMzEzIj57e2JpcnRoX2RhdGV9fTwvdHNwYW4+PC90ZXh0Pgo8dGV4dCBmaWxsPSIjMEMwRTExIiBzdHlsZT0id2hpdGUtc3BhY2U6IHByZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjkiIGxldHRlci1zcGFjaW5nPSIwZW0iPjx0c3BhbiB4PSIyNCIgeT0iMTQ5LjEyIj5EYXRlIG9mIGJpcnRoPC90c3Bhbj48L3RleHQ+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfNTQ5XzE0NiIgeDE9IjE4Mi41IiB5MT0iMCIgeDI9IjE4Mi41IiB5Mj0iMjQzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZFRkQiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRjVFNUQ3Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg=="
+          }
+        ]
+      }
+    }
+  ],
+  "claims": [
+    {
+      "path": ["family_name"],
+      "mandatory": true,
+      "sd": "always",
+      "svg_id": "family_name",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Last name",
+          "description": "Current last name(s) or surname(s)."
+        }
+      ]
+    },
+    {
+      "path": ["given_name"],
+      "mandatory": true,
+      "sd": "always",
+      "svg_id": "given_name",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "First name",
+          "description": "Current first name(s), including middle name(s) if applicable."
+        }
+      ]
+    },
+    {
+      "path": ["birthdate"],
+      "mandatory": true,
+      "sd": "always",
+      "svg_id": "birth_date",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Date of birth",
+          "description": "Full birth date (day, month, year)."
+        }
+      ]
+    },
+    {
+      "path": ["picture"],
+      "mandatory": false,
+      "sd": "always",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Picture",
+          "description": "Portrait image of the person."
+        }
+      ]
+    },
+    {
+      "path": ["email"],
+      "mandatory": false,
+      "sd": "always",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Email",
+          "description": "Person's email address."
+        }
+      ]
+    },
+    {
+      "path": ["date_of_expiry"],
+      "mandatory": true,
+      "sd": "always",
+      "svg_id": "expiry_date",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Expiry date",
+          "description": "End date of the document's validity."
+        }
+      ]
+    },
+    {
+      "path": ["issuer_name"],
+      "mandatory": true,
+      "sd": "always",
+      "svg_id": "issuer_name",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Issuer name",
+          "description": "Name of the issuing institution."
+        }
+      ]
+    },
+    {
+      "path": ["school_name"],
+      "mandatory": true,
+      "sd": "always",
+      "svg_id": "school_name",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "School name",
+          "description": "Name of the student's school."
+        }
+      ]
+    },
+    {
+      "path": ["student_number"],
+      "mandatory": true,
+      "sd": "always",
+      "svg_id": "student_number",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Student number",
+          "description": "Unique identifier for student assigned by the school."
+        }
+      ]
+    }
+  ]
+}

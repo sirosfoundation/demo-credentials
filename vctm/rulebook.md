@@ -14,6 +14,7 @@ for testing and development purposes.
 | EHIC | High | cnf |
 | PID (ARF 1.5) | High | cnf |
 | PID (Rulebook 1.5) | High | cnf |
+| Student ID | Basic | Key |
 
 ## Issuance Policy
 
