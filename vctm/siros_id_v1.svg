@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 829 504" width="829" height="504">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d"/>
+      <stop offset="100%" style="stop-color:#0d1c30"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#284d78"/>
+      <stop offset="100%" style="stop-color:#1a365d"/>
+    </linearGradient>
+    <clipPath id="photoClip">
+      <rect x="48" y="140" width="120" height="150" rx="8" ry="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="829" height="504" rx="24" ry="24" fill="url(#bg)"/>
+
+  <!-- Header band -->
+  <rect width="829" height="90" rx="24" ry="24" fill="url(#header)"/>
+  <rect y="60" width="829" height="30" fill="url(#header)"/>
+
+  <!-- Title -->
+  <text x="48" y="45" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" letter-spacing="1">SIROS ID</text>
+  <text x="48" y="72" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="13" opacity="0.75">Digital ID (scanned passport)</text>
+
+  <!-- Issuing country -->
+  <text x="600" y="45" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="13" opacity="0.75" text-anchor="end">Issuing country</text>
+  <text x="781" y="45" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" text-anchor="end">{{issuing_country}}</text>
+
+  <!-- Verified badge -->
+  <rect x="600" y="55" width="181" height="24" rx="12" ry="12" fill="#2f9e56" opacity="0.85"/>
+  <text x="690" y="71" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Verified by facial recognition</text>
+
+  <!-- Photo frame -->
+  <rect x="48" y="140" width="120" height="150" rx="8" ry="8" fill="white" opacity="0.15"/>
+  <image id="picture" x="48" y="140" width="120" height="150" clip-path="url(#photoClip)" preserveAspectRatio="xMidYMid slice" href="{{portrait}}"/>
+  <text x="108" y="222" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" opacity="0.4">PHOTO</text>
+
+  <!-- Name labels -->
+  <text x="200" y="160" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="13" opacity="0.65">First name</text>
+  <text x="200" y="185" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold">{{given_name}}</text>
+
+  <text x="200" y="225" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="13" opacity="0.65">Last name</text>
+  <text x="200" y="250" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold">{{family_name}}</text>
+
+  <!-- Date of birth -->
+  <text x="200" y="300" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="13" opacity="0.65">Date of birth</text>
+  <text x="200" y="325" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="20">{{birth_date}}</text>
+
+  <!-- Sex -->
+  <text x="530" y="160" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="13" opacity="0.65">Sex</text>
+  <text x="530" y="185" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="18">{{sex}}</text>
+
+  <!-- Nationality -->
+  <text x="530" y="225" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="13" opacity="0.65">Nationality</text>
+  <text x="530" y="250" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="18">{{nationality}}</text>
+
+  <!-- Bottom bar -->
+  <rect y="400" width="829" height="104" fill="white" opacity="0.06"/>
+  <rect y="480" width="829" height="24" rx="24" ry="24" fill="white" opacity="0.06"/>
+
+  <!-- Document number -->
+  <text x="48" y="435" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="12" opacity="0.6">Document number</text>
+  <text x="48" y="460" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold">{{document_number}}</text>
+
+  <!-- Expiry date -->
+  <text x="680" y="435" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="12" opacity="0.6" text-anchor="end">Valid until</text>
+  <text x="680" y="460" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end">{{expiry_date}}</text>
+
+  <!-- Decorative rings -->
+  <circle cx="770" cy="445" r="30" fill="none" stroke="white" stroke-width="2" opacity="0.15"/>
+  <circle cx="770" cy="445" r="20" fill="none" stroke="white" stroke-width="1.5" opacity="0.15"/>
+</svg>
