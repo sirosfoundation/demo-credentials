@@ -64,30 +64,6 @@
       ]
     },
     {
-      "path": ["picture"],
-      "mandatory": false,
-      "sd": "always",
-      "display": [
-        {
-          "locale": "en-US",
-          "label": "Picture",
-          "description": "Portrait image of the person."
-        }
-      ]
-    },
-    {
-      "path": ["email"],
-      "mandatory": false,
-      "sd": "always",
-      "display": [
-        {
-          "locale": "en-US",
-          "label": "Email",
-          "description": "Person's email address."
-        }
-      ]
-    },
-    {
       "path": ["date_of_expiry"],
       "mandatory": true,
       "sd": "always",
@@ -127,7 +103,7 @@
       ]
     },
     {
-      "path": ["status"],
+      "path": ["student_status"],
       "mandatory": false,
       "sd": "always",
       "display": [
