@@ -1,0 +1,3 @@
+# Schema metadata for demo_student_id
+attestation_los: iso_18045_basic
+binding_type: key

@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "generated": "2026-07-03T12:21:49Z",
+  "repository": {
+    "url": "https://github.com/sirosfoundation/demo-credentials",
+    "owner": "sirosfoundation",
+    "name": "demo-credentials",
+    "branch": "main",
+    "commit": "1892457319fa973f014db15f977dcc0898964b58"
+  },
+  "credentials": [
+    {
+      "vct": "https://registry.siros.org/sirosfoundation/demo_pid_rb_1_5.vctm.json",
+      "name": "PID SD-JWT VC Type Metadata (Demo)",
+      "source_file": "demo_pid_rb_1_5.vctm.json",
+      "vctm_file": "demo_pid_rb_1_5.vctm.json",
+      "last_modified": "2026-07-03T14:21:10+02:00",
+      "commit_history": [
+        {
+          "sha": "1892457319fa973f014db15f977dcc0898964b58",
+          "message": "Merge pull request #12 from sirosfoundation/feat/new-siros-id-svg-template",
+          "author": "Leif Johansson",
+          "date": "2026-07-03T14:21:10+02:00"
+        }
+      ]
+    },
+    {
+      "vct": "https://registry.siros.org/sirosfoundation/demo_student_id.vctm.json",
+      "name": "Student ID",
+      "source_file": "demo_student_id.vctm.json",
+      "vctm_file": "demo_student_id.vctm.json",
+      "last_modified": "2026-07-03T14:21:10+02:00",
+      "commit_history": [
+        {
+          "sha": "1892457319fa973f014db15f977dcc0898964b58",
+          "message": "Merge pull request #12 from sirosfoundation/feat/new-siros-id-svg-template",
+          "author": "Leif Johansson",
+          "date": "2026-07-03T14:21:10+02:00"
+        }
+      ]
+    },
+    {
+      "vct": "https://registry.siros.org/sirosfoundation/siros_id.vctm.json",
+      "name": "SIROS ID",
+      "source_file": "siros_id.vctm.json",
+      "vctm_file": "siros_id.vctm.json",
+      "last_modified": "2026-07-03T14:21:10+02:00",
+      "commit_history": [
+        {
+          "sha": "1892457319fa973f014db15f977dcc0898964b58",
+          "message": "Merge pull request #12 from sirosfoundation/feat/new-siros-id-svg-template",
+          "author": "Leif Johansson",
+          "date": "2026-07-03T14:21:10+02:00"
+        }
+      ]
+    },
+    {
+      "vct": "urn:demo:1",
+      "name": "Simple demo credential",
+      "source_file": "vctm_demo_1.json",
+      "vctm_file": "vctm_demo_1.vctm.json",
+      "last_modified": "2026-07-03T14:21:10+02:00",
+      "commit_history": [
+        {
+          "sha": "1892457319fa973f014db15f977dcc0898964b58",
+          "message": "Merge pull request #12 from sirosfoundation/feat/new-siros-id-svg-template",
+          "author": "Leif Johansson",
+          "date": "2026-07-03T14:21:10+02:00"
+        }
+      ]
+    },
+    {
+      "vct": "urn:eudi:diploma:1",
+      "name": "Diploma Credential",
+      "source_file": "vctm_diploma.json",
+      "vctm_file": "vctm_diploma.vctm.json",
+      "last_modified": "2026-07-03T14:21:10+02:00",
+      "commit_history": [
+        {
+          "sha": "1892457319fa973f014db15f977dcc0898964b58",
+          "message": "Merge pull request #12 from sirosfoundation/feat/new-siros-id-svg-template",
+          "author": "Leif Johansson",
+          "date": "2026-07-03T14:21:10+02:00"
+        }
+      ]
+    },
+    {
+      "vct": "urn:eudi:ehic:1",
+      "name": "DC4EU EHIC SD-JWT VCTM",
+      "source_file": "vctm_ehic.json",
+      "vctm_file": "vctm_ehic.vctm.json",
+      "last_modified": "2026-07-03T14:21:10+02:00",
+      "commit_history": [
+        {
+          "sha": "1892457319fa973f014db15f977dcc0898964b58",
+          "message": "Merge pull request #12 from sirosfoundation/feat/new-siros-id-svg-template",
+          "author": "Leif Johansson",
+          "date": "2026-07-03T14:21:10+02:00"
+        }
+      ]
+    },
+    {
+      "vct": "eu.europa.ec.eudi.pid.1",
+      "name": "PID (MSO MDoc)",
+      "source_file": "vctm_mdoc.json",
+      "vctm_file": "vctm_mdoc.vctm.json",
+      "last_modified": "2026-07-03T14:21:10+02:00",
+      "commit_history": [
+        {
+          "sha": "1892457319fa973f014db15f977dcc0898964b58",
+          "message": "Merge pull request #12 from sirosfoundation/feat/new-siros-id-svg-template",
+          "author": "Leif Johansson",
+          "date": "2026-07-03T14:21:10+02:00"
+        }
+      ]
+    },
+    {
+      "vct": "urn:eudi:pid:arf-1.5:1",
+      "name": "Example ARF 1.5 PID SD-JWT VCTM",
+      "source_file": "vctm_pid_arf_1_5.json",
+      "vctm_file": "vctm_pid_arf_1_5.vctm.json",
+      "last_modified": "2026-07-03T14:21:10+02:00",
+      "commit_history": [
+        {
+          "sha": "1892457319fa973f014db15f977dcc0898964b58",
+          "message": "Merge pull request #12 from sirosfoundation/feat/new-siros-id-svg-template",
+          "author": "Leif Johansson",
+          "date": "2026-07-03T14:21:10+02:00"
+        }
+      ]
+    }
+  ]
+}
