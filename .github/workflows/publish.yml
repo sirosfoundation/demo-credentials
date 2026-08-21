@@ -30,6 +30,14 @@ jobs:
         run: |
           mkdir -p ./dist
           cp -v vctm/*.md ./dist/ 2>/dev/null || true
+          # MDDL documents (.mdoc.json) are already in their final published
+          # form, so they need no conversion - but mtcvctm publish-vctm below
+          # silently ignores them (it processes VCTM sources only, with no
+          # warning and a zero exit), so without this copy an mso_mdoc
+          # credential type never reaches the vctm branch and disappears from
+          # the registry. They carry no remote image references, so they do
+          # not need the --inline-images pass either.
+          cp -v vctm/*.mdoc.json ./dist/ 2>/dev/null || true
 
       - name: Publish VCTM files to vctm branch
         run: mtcvctm publish-vctm --input ./vctm --output ./dist --github-action --vctm-branch vctm --inline-images
