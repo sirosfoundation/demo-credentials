@@ -1,0 +1,4 @@
+# Schema metadata for siros_id (Siros ID)
+attestation_los: high
+binding_type: cnf
+version: "1.0"
