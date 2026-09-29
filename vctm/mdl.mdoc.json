@@ -187,8 +187,7 @@
         "display": [{ "locale": "en-US", "name": "Signature or usual mark" }]
       },
       "pseudonym_seed": {
-        "value_type": "bstr",
-        "display": [{ "locale": "en-US", "name": "Pseudonym seed" }]
+        "value_type": "bstr"
       }
     }
   }
