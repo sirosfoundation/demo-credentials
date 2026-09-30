@@ -1,0 +1,3 @@
+# Schema metadata for vctm_ehic (European Health Insurance Card)
+attestation_los: high
+binding_type: cnf

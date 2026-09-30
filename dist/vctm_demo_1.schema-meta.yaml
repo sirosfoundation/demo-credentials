@@ -1,0 +1,4 @@
+# Schema metadata for vctm_demo_1 (Simple demo credential)
+# See: https://registry.siros.org/docs/ts11.html
+attestation_los: low
+binding_type: cnf

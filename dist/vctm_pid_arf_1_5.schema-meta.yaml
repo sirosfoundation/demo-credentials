@@ -1,0 +1,4 @@
+# Schema metadata for vctm_pid_arf_1_5 (Person Identification Data - ARF 1.5)
+attestation_los: high
+binding_type: cnf
+version: "1.5"
