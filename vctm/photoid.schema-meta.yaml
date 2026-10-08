@@ -1,0 +1,3 @@
+# Schema metadata for photoid (EWC RFC013 Photo ID, ISO/IEC TS 23220-4 Annex C, mso_mdoc)
+attestation_los: high
+binding_type: cnf

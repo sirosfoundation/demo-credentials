@@ -126,6 +126,30 @@
           "description": "Unique identifier for student assigned by the school."
         }
       ]
+    },
+    {
+      "path": ["email"],
+      "mandatory": false,
+      "sd": "always",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Email",
+          "description": "Person's email address."
+        }
+      ]
+    },
+    {
+      "path": ["picture"],
+      "mandatory": false,
+      "sd": "always",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Picture",
+          "description": "Portrait image of the person."
+        }
+      ]
     }
   ]
 }
