@@ -1,0 +1,26 @@
+{
+  "format": "mso_mdoc",
+  "doctype": "org.siros.age.1",
+  "display": [
+    {
+      "locale": "en-US",
+      "name": "Age credential",
+      "description": "Minimal age credential suitable for use with zero-knowledge proofs",
+      "background_color": "#006400",
+      "text_color": "#ffffff"
+    }
+  ],
+  "claims": {
+    "org.siros.age": {
+      "birth_date": {
+        "mandatory": true,
+        "value_type": "full-date",
+        "display": [{ "locale": "en-US", "name": "Date of birth" }]
+      },
+      "pseudonym_seed": {
+        "mandatory": true,
+        "value_type": "bstr"
+      }
+    }
+  }
+}

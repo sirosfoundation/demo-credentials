@@ -15,6 +15,7 @@ for testing and development purposes.
 | PID (ARF 1.5) | High | cnf |
 | PID (Rulebook 1.5) | High | cnf |
 | Student ID | Basic | Key |
+| Age | Basic | Key |
 
 ## Issuance Policy
 
