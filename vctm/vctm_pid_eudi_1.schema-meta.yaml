@@ -1,4 +1,0 @@
-# Schema metadata for vctm_pid_eudi_1 (Person Identification Data - vct urn:eudi:pid:1, ARF 1.8 claims)
-attestation_los: high
-binding_type: cnf
-version: "1.8"
