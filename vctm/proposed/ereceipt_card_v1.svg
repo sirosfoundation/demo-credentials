@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="365" height="243" viewBox="0 0 365 243" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="243" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>
+  </linearGradient>
+  <clipPath id="card"><rect x="0.5" y="0.5" width="364" height="242" rx="14.5"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" width="364" height="242" rx="14.5" fill="url(#bg)" stroke="#BDBDBD"/>
+<g clip-path="url(#card)"><rect x="0" y="0" width="6" height="243" fill="#0C4A6E"/></g>
+<g transform="translate(316 20)" fill="none" stroke="#0C4A6E" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4.5 2h15v18l-2.5-1.6-2.5 1.6-2.5-1.6-2.5 1.6L7 20l-2.5 1.6z"/><path d="M8 7h8M8 11h8M8 15h5"/></g>
+<text x="26" y="32" font-family="Arial" font-size="9" fill="#0C4A6E" letter-spacing="0.8" xml:space="preserve">ERECEIPT</text>
+<text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">{{merchant_name}}</text>
+<text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">Receipt {{receipt_number}}</text>
+<text x="26" y="116" font-family="Arial" font-size="19" fill="#0C4A6E" font-weight="bold" xml:space="preserve">{{total_price_inc_vat}} {{currency_iso_code}}</text>
+<line x1="26" y1="140" x2="339" y2="140" stroke="#E2E8F0"/>
+<text x="26" y="164" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">DATE</text>
+<text x="26" y="178" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{receipt_timestamp}}</text>
+<text x="190" y="164" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">EXCLUDING VAT</text>
+<text x="190" y="178" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{total_price_exc_vat}}</text>
+<rect x="12" y="194" width="342" height="38" rx="8" fill="#EBF3F8"/>
+<text x="26" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">VAT</text>
+<text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{total_vat_amount}}</text>
+<text x="190" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">RECEIPT TYPE</text>
+<text x="190" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{type}}</text>
+</svg>

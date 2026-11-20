@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="365" height="243" viewBox="0 0 365 243" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="243" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>
+  </linearGradient>
+  <clipPath id="card"><rect x="0.5" y="0.5" width="364" height="242" rx="14.5"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" width="364" height="242" rx="14.5" fill="url(#bg)" stroke="#BDBDBD"/>
+<g clip-path="url(#card)"><rect x="0" y="0" width="6" height="243" fill="#4C1D95"/></g>
+<g transform="translate(316 20)" fill="none" stroke="#4C1D95" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M19 4L5 20"/></g>
+<text x="26" y="32" font-family="Arial" font-size="9" fill="#4C1D95" letter-spacing="0.8" xml:space="preserve">VAT IDENTIFICATION</text>
+<text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">{{vat_name}}</text>
+<text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">{{vat_id}}</text>
+<line x1="26" y1="112" x2="339" y2="112" stroke="#E2E8F0"/>
+<text x="26" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ORGANISATION TYPE</text>
+<text x="26" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{organisation_type}}</text>
+<text x="190" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">EU CROSS-BORDER</text>
+<text x="190" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{eu_cross_border}}</text>
+<text x="26" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">VALID FROM</text>
+<text x="26" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{valid_from}}</text>
+<text x="190" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">VALID UNTIL</text>
+<text x="190" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{valid_until}}</text>
+<rect x="12" y="194" width="342" height="38" rx="8" fill="#F2EEFA"/>
+<text x="26" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ISSUED BY</text>
+<text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{issuer}}</text>
+</svg>
