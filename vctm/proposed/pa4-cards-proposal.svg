@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="864" height="1091" viewBox="0 0 864 1091" fill="none">
+<rect width="864" height="1091" fill="#FFFFFF"/>
+<text x="44" y="54" font-family="Arial" font-size="17" font-weight="bold" fill="#0C0E11">WE BUILD PA4 credentials — proposed card designs</text>
+<text x="44" y="74" font-family="Arial" font-size="11" fill="#718096">One layout, five accents. Shown with sample data at real field lengths. 365×243, Arial, text-only placeholders.</text>
+<text x="44" y="104" font-family="Arial" font-size="12" font-weight="bold" fill="#4A5568">EBWOID — Business Wallet Owner ID</text>
+<g transform="translate(44 114)">
+
+<defs>
+  <linearGradient id="bg_ebwoid" x1="0" y1="0" x2="0" y2="243" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>
+  </linearGradient>
+  <clipPath id="card_ebwoid"><rect x="0.5" y="0.5" width="364" height="242" rx="14.5"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" width="364" height="242" rx="14.5" fill="url(#bg_ebwoid)" stroke="#BDBDBD"/>
+<g clip-path="url(#card_ebwoid)"><rect x="0" y="0" width="6" height="243" fill="#1A365D"/></g>
+<g transform="translate(316 20)" fill="none" stroke="#1A365D" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><rect x="1.5" y="6" width="21" height="14" rx="3"/><path d="M5 6V3.5h11V6"/><circle cx="17" cy="13" r="1.8"/></g>
+<text x="26" y="32" font-family="Arial" font-size="9" fill="#1A365D" letter-spacing="0.8" xml:space="preserve">BUSINESS WALLET OWNER ID</text>
+<text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">KLM Royal Dutch Airlines</text>
+<text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">SEBOLREG.556012-3456</text>
+<line x1="26" y1="112" x2="339" y2="112" stroke="#E2E8F0"/>
+<text x="26" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ISSUING AUTHORITY</text>
+<text x="26" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">Bolagsverket</text>
+<text x="190" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">COUNTRY</text>
+<text x="190" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">SE</text>
+<text x="26" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">EXPIRES</text>
+<text x="26" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">2028-12-31</text>
+<text x="190" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ATTESTATION CATEGORY</text>
+<text x="190" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">PuB-EAA</text>
+<rect x="12" y="194" width="342" height="38" rx="8" fill="#EEF2F8"/>
+<text x="26" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ISSUED BY</text>
+<text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">Bolagsverket</text>
+
+</g>
+<text x="455" y="104" font-family="Arial" font-size="12" font-weight="bold" fill="#4A5568">EUCC — EU Company Certificate</text>
+<g transform="translate(455 114)">
+
+<defs>
+  <linearGradient id="bg_eucc" x1="0" y1="0" x2="0" y2="243" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>
+  </linearGradient>
+  <clipPath id="card_eucc"><rect x="0.5" y="0.5" width="364" height="242" rx="14.5"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" width="364" height="242" rx="14.5" fill="url(#bg_eucc)" stroke="#BDBDBD"/>
+<g clip-path="url(#card_eucc)"><rect x="0" y="0" width="6" height="243" fill="#14532D"/></g>
+<g transform="translate(316 20)" fill="none" stroke="#14532D" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="9.5" r="7"/><circle cx="12" cy="9.5" r="3"/><path d="M8.5 16l-1.5 6 5-2.5 5 2.5-1.5-6"/></g>
+<text x="26" y="32" font-family="Arial" font-size="9" fill="#14532D" letter-spacing="0.8" xml:space="preserve">EU COMPANY CERTIFICATE</text>
+<text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">Example Trading Company Ltd</text>
+<text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">NLNHR.68750110</text>
+<line x1="26" y1="112" x2="339" y2="112" stroke="#E2E8F0"/>
+<text x="26" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">LEGAL FORM</text>
+<text x="26" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">Besloten Vennootschap</text>
+<text x="190" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">STATUS</text>
+<text x="190" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">Active</text>
+<text x="26" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">REGISTERED</text>
+<text x="26" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">2015-03-18</text>
+<text x="190" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">MEMBER STATE</text>
+<text x="190" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">NL</text>
+<rect x="12" y="194" width="342" height="38" rx="8" fill="#EDF4EF"/>
+<text x="26" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">AUTHENTIC SOURCE</text>
+<text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">Kamer van Koophandel</text>
+
+</g>
+<text x="44" y="423" font-family="Arial" font-size="12" font-weight="bold" fill="#4A5568">VAT ID — VAT Identification</text>
+<g transform="translate(44 433)">
+
+<defs>
+  <linearGradient id="bg_vat_id" x1="0" y1="0" x2="0" y2="243" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>
+  </linearGradient>
+  <clipPath id="card_vat_id"><rect x="0.5" y="0.5" width="364" height="242" rx="14.5"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" width="364" height="242" rx="14.5" fill="url(#bg_vat_id)" stroke="#BDBDBD"/>
+<g clip-path="url(#card_vat_id)"><rect x="0" y="0" width="6" height="243" fill="#4C1D95"/></g>
+<g transform="translate(316 20)" fill="none" stroke="#4C1D95" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M19 4L5 20"/></g>
+<text x="26" y="32" font-family="Arial" font-size="9" fill="#4C1D95" letter-spacing="0.8" xml:space="preserve">VAT IDENTIFICATION</text>
+<text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">KLM Royal Dutch Airlines</text>
+<text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">NL001234567B01</text>
+<line x1="26" y1="112" x2="339" y2="112" stroke="#E2E8F0"/>
+<text x="26" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ORGANISATION TYPE</text>
+<text x="26" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">N.V.</text>
+<text x="190" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">EU CROSS-BORDER</text>
+<text x="190" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">Yes</text>
+<text x="26" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">SOURCE COUNTRY</text>
+<text x="26" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">NL</text>
+<text x="190" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ATTESTATION CATEGORY</text>
+<text x="190" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">PuB-EAA</text>
+<rect x="12" y="194" width="342" height="38" rx="8" fill="#F2EEFA"/>
+<text x="26" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ISSUED BY</text>
+<text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">Belastingdienst</text>
+
+</g>
+<text x="455" y="423" font-family="Arial" font-size="12" font-weight="bold" fill="#4A5568">eInvoice</text>
+<g transform="translate(455 433)">
+
+<defs>
+  <linearGradient id="bg_einvoice" x1="0" y1="0" x2="0" y2="243" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>
+  </linearGradient>
+  <clipPath id="card_einvoice"><rect x="0.5" y="0.5" width="364" height="242" rx="14.5"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" width="364" height="242" rx="14.5" fill="url(#bg_einvoice)" stroke="#BDBDBD"/>
+<g clip-path="url(#card_einvoice)"><rect x="0" y="0" width="6" height="243" fill="#7C2D12"/></g>
+<g transform="translate(316 20)" fill="none" stroke="#7C2D12" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 2h11l5 5v15H4z"/><path d="M15 2v5h5"/><path d="M7.5 12h9M7.5 16h9M7.5 8h4"/></g>
+<text x="26" y="32" font-family="Arial" font-size="9" fill="#7C2D12" letter-spacing="0.8" xml:space="preserve">EINVOICE</text>
+<text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">Exempelbolaget Handel AB</text>
+<text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">Invoice INV-2026-000123</text>
+<text x="26" y="116" font-family="Arial" font-size="19" fill="#7C2D12" font-weight="bold" xml:space="preserve">14 250.00 EUR</text>
+<line x1="26" y1="140" x2="339" y2="140" stroke="#E2E8F0"/>
+<text x="26" y="164" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">ISSUED</text>
+<text x="26" y="178" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">2026-11-02</text>
+<text x="190" y="164" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">VAT TOTAL</text>
+<text x="190" y="178" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">2 850.00</text>
+<rect x="12" y="194" width="342" height="38" rx="8" fill="#F8EFEA"/>
+<text x="26" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">STATUS</text>
+<text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">active</text>
+<text x="190" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">BUYER</text>
+<text x="190" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">Exempelbolaget Inköp AB</text>
+
+</g>
+<text x="44" y="742" font-family="Arial" font-size="12" font-weight="bold" fill="#4A5568">eReceipt</text>
+<g transform="translate(44 752)">
+
+<defs>
+  <linearGradient id="bg_ereceipt" x1="0" y1="0" x2="0" y2="243" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>
+  </linearGradient>
+  <clipPath id="card_ereceipt"><rect x="0.5" y="0.5" width="364" height="242" rx="14.5"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" width="364" height="242" rx="14.5" fill="url(#bg_ereceipt)" stroke="#BDBDBD"/>
+<g clip-path="url(#card_ereceipt)"><rect x="0" y="0" width="6" height="243" fill="#0C4A6E"/></g>
+<g transform="translate(316 20)" fill="none" stroke="#0C4A6E" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4.5 2h15v18l-2.5-1.6-2.5 1.6-2.5-1.6-2.5 1.6L7 20l-2.5 1.6z"/><path d="M8 7h8M8 11h8M8 15h5"/></g>
+<text x="26" y="32" font-family="Arial" font-size="9" fill="#0C4A6E" letter-spacing="0.8" xml:space="preserve">ERECEIPT</text>
+<text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">Receipt RCP-2026-889102</text>
+<text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">RCP-2026-889044</text>
+<text x="26" y="116" font-family="Arial" font-size="19" fill="#0C4A6E" font-weight="bold" xml:space="preserve">14 250.00 EUR</text>
+<line x1="26" y1="140" x2="339" y2="140" stroke="#E2E8F0"/>
+<text x="26" y="164" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">DATE</text>
+<text x="26" y="178" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">2026-11-04 09:41</text>
+<text x="190" y="164" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">EXCLUDING VAT</text>
+<text x="190" y="178" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">11 400.00</text>
+<rect x="12" y="194" width="342" height="38" rx="8" fill="#EBF3F8"/>
+<text x="26" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">VAT</text>
+<text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">2 850.00</text>
+<text x="190" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">RECEIPT TYPE</text>
+<text x="190" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">B2B payment</text>
+
+</g>
+</svg>
