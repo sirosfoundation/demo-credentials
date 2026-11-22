@@ -4,23 +4,26 @@
     <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>
   </linearGradient>
   <clipPath id="card"><rect x="0.5" y="0.5" width="364" height="242" rx="14.5"/></clipPath>
+  <clipPath id="colL"><rect x="20" y="0" width="162" height="243"/></clipPath>
+  <clipPath id="colR"><rect x="184" y="0" width="155" height="243"/></clipPath>
+  <clipPath id="head"><rect x="20" y="0" width="290" height="110"/></clipPath>
 </defs>
 <rect x="0.5" y="0.5" width="364" height="242" rx="14.5" fill="url(#bg)" stroke="#BDBDBD"/>
 <g clip-path="url(#card)"><rect x="0" y="0" width="6" height="243" fill="#14532D"/></g>
 <g transform="translate(316 20)" fill="none" stroke="#14532D" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="9.5" r="7"/><circle cx="12" cy="9.5" r="3"/><path d="M8.5 16l-1.5 6 5-2.5 5 2.5-1.5-6"/></g>
 <text x="26" y="32" font-family="Arial" font-size="9" fill="#14532D" letter-spacing="0.8" xml:space="preserve">EU COMPANY CERTIFICATE</text>
-<text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">{{legal_person_name}}</text>
-<text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">{{legal_person_id}}</text>
+<g clip-path="url(#head)"><text x="26" y="66" font-family="Arial" font-size="14" fill="#0C0E11" font-weight="bold" xml:space="preserve">{{legal_person_name}}</text></g>
+<g clip-path="url(#head)"><text x="26" y="85" font-family="Arial" font-size="11" fill="#4A5568" xml:space="preserve">{{legal_person_id}}</text></g>
 <line x1="26" y1="112" x2="339" y2="112" stroke="#E2E8F0"/>
 <text x="26" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">LEGAL FORM</text>
-<text x="26" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{legal_form_type}}</text>
+<g clip-path="url(#colL)"><text x="26" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{legal_form_type}}</text></g>
 <text x="190" y="136" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">STATUS</text>
-<text x="190" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{legal_person_status}}</text>
+<g clip-path="url(#colR)"><text x="190" y="150" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{legal_person_status}}</text></g>
 <text x="26" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">REGISTERED</text>
-<text x="26" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{registration_date}}</text>
+<g clip-path="url(#colL)"><text x="26" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{registration_date}}</text></g>
 <text x="190" y="170" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">MEMBER STATE</text>
-<text x="190" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{registration_member_state}}</text>
+<g clip-path="url(#colR)"><text x="190" y="184" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{registration_member_state}}</text></g>
 <rect x="12" y="194" width="342" height="38" rx="8" fill="#EDF4EF"/>
 <text x="26" y="211" font-family="Arial" font-size="9" fill="#718096" letter-spacing="0.8" xml:space="preserve">AUTHENTIC SOURCE</text>
-<text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{authentic_source_name}}</text>
+<g clip-path="url(#colL)"><text x="26" y="225" font-family="Arial" font-size="11" fill="#1A202C" xml:space="preserve">{{authentic_source_name}}</text></g>
 </svg>

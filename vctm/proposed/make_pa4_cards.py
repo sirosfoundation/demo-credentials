@@ -31,12 +31,26 @@ def label(x, y, text, fill=MUTED):
     )
 
 
-def value(x, y, text, size=11, fill=VALUE, weight=None):
+def value(x, y, text, size=11, fill=VALUE, weight=None, clip=None):
+    """A value line, optionally clipped to its column.
+
+    Placeholders are substituted at render time, so the final string length is
+    unknown here and no amount of layout care prevents a long value running
+    into the next column - `Societe a responsabilite limitee (SARL)` collided
+    with the EU CROSS-BORDER value the first time these cards rendered against
+    a real credential. SVG has no text-overflow, and textLength would squash
+    short values as readily as it trims long ones, so the value is clipped at
+    the column boundary instead: a cut word reads as truncation, overlapping
+    glyphs read as a broken card.
+    """
     w = f' font-weight="{weight}"' if weight else ""
-    return (
+    text_el = (
         f'<text x="{x}" y="{y}" font-family="Arial" font-size="{size}" fill="{fill}"'
         f'{w} xml:space="preserve">{esc(text)}</text>'
     )
+    if clip:
+        return f'<g clip-path="url(#{clip})">{text_el}</g>'
+    return text_el
 
 
 def glyph(kind, accent):
@@ -71,15 +85,23 @@ def card(accent, tint, kind, type_label, headline, identifier,
         '    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F9FC"/>',
         "  </linearGradient>",
         f'  <clipPath id="card"><rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="14.5"/></clipPath>',
+        # Column boxes for value truncation - see value()'s docstring. The left
+        # one stops 8px short of the right column's x=190; both run the full
+        # card height so one box serves the grid and the footer alike. The
+        # headline box stops short of the 24x24 mark at x=316.
+        f'  <clipPath id="colL"><rect x="20" y="0" width="162" height="{H}"/></clipPath>',
+        f'  <clipPath id="colR"><rect x="184" y="0" width="{339 - 184}" height="{H}"/></clipPath>',
+        '  <clipPath id="head"><rect x="20" y="0" width="290" height="110"/></clipPath>',
         "</defs>",
         f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="14.5" fill="url(#bg)" stroke="{STROKE}"/>',
         # The accent spine identifies the credential family at a glance.
         f'<g clip-path="url(#card)"><rect x="0" y="0" width="6" height="{H}" fill="{accent}"/></g>',
         glyph(kind, accent),
         label(26, 32, type_label.upper(), accent),
-        value(26, 66, headline, size=14, fill=INK, weight="bold"),
-        value(26, 85, identifier, size=11, fill=SUBTLE),
+        value(26, 66, headline, size=14, fill=INK, weight="bold", clip="head"),
     ]
+    if identifier:
+        out.append(value(26, 85, identifier, size=11, fill=SUBTLE, clip="head"))
 
     # The footer band starts at y=194, so the last value baseline has to stay
     # above roughly y=186 to clear it. That leaves room for two field rows on a
@@ -104,7 +126,7 @@ def card(accent, tint, kind, type_label, headline, identifier,
         x = cols[index % 2]
         y = top + 24 + (index // 2) * 34
         out.append(label(x, y, lab.upper()))
-        out.append(value(x, y + 14, placeholder))
+        out.append(value(x, y + 14, placeholder, clip="colL" if index % 2 == 0 else "colR"))
 
     # Footer strip, echoing the band on siros_id_v1.svg. It takes one or two
     # label/value pairs, in the same two columns as the grid above.
@@ -112,7 +134,8 @@ def card(accent, tint, kind, type_label, headline, identifier,
     for index, (lab, placeholder) in enumerate(footer[:2]):
         x = cols[index % 2]
         out.append(label(x, 211, lab.upper()))
-        out.append(value(x, 225, placeholder, size=11, fill=VALUE))
+        out.append(value(x, 225, placeholder, size=11, fill=VALUE,
+                           clip="colL" if index % 2 == 0 else "colR"))
     out.append("</svg>")
 
     return "\n".join(out) + "\n"
@@ -183,7 +206,14 @@ CARDS = {
         # identifying field that does bind, so it carries the headline until
         # that is fixed.
         headline="Receipt {{receipt_number}}",
-        identifier="{{original_receipt_number}}",
+        # No subtitle. original_receipt_number is only set on a refund or
+        # correction, so on an ordinary purchase the renderer substitutes "-"
+        # (wallet-common's rendering.ts falls back to "-" for any placeholder
+        # whose claim is absent) and the card reads as broken. The merchant
+        # name is what belongs in this slot; until registry-cli#63 resolves
+        # the $ref that hides it, the slot stays empty rather than filled
+        # with a claim that is normally not there.
+        identifier="",
         amount="{{total_price_inc_vat}} {{currency_iso_code}}",
         fields=[
             ("Date", "{{receipt_timestamp}}"),
