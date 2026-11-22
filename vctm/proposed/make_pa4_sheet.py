@@ -41,13 +41,12 @@ SAMPLES = {
     "registration_member_state": "NL",
     "authentic_source_name": "Kamer van Koophandel",
     # VAT ID — vat-id-sd-jwt-sample.json
-    "vat_name": "KLM Royal Dutch Airlines",
+    "name": "KLM Royal Dutch Airlines",
     "vat_id": "NL001234567B01",
     "organisation_type": "N.V.",
-    "eu_cross_border": "Yes",
-    "valid_from": "2020-01-15",
-    "valid_until": "2027-12-31",
-    "issuer": "Belastingdienst",
+    "registered_eu_cross_border_transactions": "Yes",
+    "authentic_source_country": "NL",
+    "vat_id_authentic_source": "Belastingdienst",
     # eInvoice — eInvoice-sd-jwt-sample.json
     "seller_name": "Exempelbolaget Handel AB",
     "invoiceNumber": "INV-2026-000123",
@@ -58,8 +57,8 @@ SAMPLES = {
     "invoiceLifecycleStatus": "active",
     "buyer_name": "Exempelbolaget Inköp AB",
     # eReceipt — e-receipt-sd-jwt-sample.json
-    "merchant_name": "Exempelbolaget Handel AB",
     "receipt_number": "RCP-2026-889102",
+    "original_receipt_number": "RCP-2026-889044",
     "total_price_inc_vat": "14 250.00",
     "currency_iso_code": "EUR",
     "receipt_timestamp": "2026-11-04 09:41",
@@ -118,7 +117,7 @@ def main():
 
     all_missing = set()
     for index, slug in enumerate(CARDS):
-        with open(os.path.join(HERE, "vctm", "proposed", f"{slug}_card_v1.svg")) as handle:
+        with open(os.path.join(HERE, f"{slug}_card_v1.svg")) as handle:
             svg = handle.read()
 
         svg, missing = fill(svg)
@@ -137,7 +136,7 @@ def main():
 
     out.append("</svg>")
 
-    sheet = os.path.join(HERE, "vctm", "proposed", "pa4-cards-proposal.svg")
+    sheet = os.path.join(HERE, "pa4-cards-proposal.svg")
     with open(sheet, "w") as handle:
         handle.write("\n".join(out) + "\n")
 

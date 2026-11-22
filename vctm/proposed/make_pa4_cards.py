@@ -148,15 +148,17 @@ CARDS = {
     "vat-id": dict(
         accent="#4C1D95", tint="#F2EEFA", kind="tax",
         type_label="VAT Identification",
-        headline="{{vat_name}}",
+        headline="{{name}}",
         identifier="{{vat_id}}",
         fields=[
             ("Organisation type", "{{organisation_type}}"),
-            ("EU cross-border", "{{eu_cross_border}}"),
-            ("Valid from", "{{valid_from}}"),
-            ("Valid until", "{{valid_until}}"),
+            ("EU cross-border", "{{registered_eu_cross_border_transactions}}"),
+            ("Source country", "{{authentic_source_country}}"),
+            ("Attestation category", "{{attestation_legal_category}}"),
         ],
-        footer=[("Issued by", "{{issuer}}")],
+        # The validity dates this row would rather show are unreachable; see
+        # "Fields that cannot be bound yet" in the README.
+        footer=[("Issued by", "{{vat_id_authentic_source}}")],
     ),
     "einvoice": dict(
         accent="#7C2D12", tint="#F8EFEA", kind="invoice",
@@ -176,13 +178,17 @@ CARDS = {
     "ereceipt": dict(
         accent="#0C4A6E", tint="#EBF3F8", kind="receipt",
         type_label="eReceipt",
-        headline="{{merchant_name}}",
-        identifier="Receipt {{receipt_number}}",
+        # The merchant name belongs here and is unreachable; see "Fields that
+        # cannot be bound yet" in the README. The receipt number is the only
+        # identifying field that does bind, so it carries the headline until
+        # that is fixed.
+        headline="Receipt {{receipt_number}}",
+        identifier="{{original_receipt_number}}",
         amount="{{total_price_inc_vat}} {{currency_iso_code}}",
         fields=[
             ("Date", "{{receipt_timestamp}}"),
             ("Excluding VAT", "{{total_price_exc_vat}}"),
-        ],
+        ],  # noqa: E262 - merchant name goes here once it is addressable
         footer=[
             ("VAT", "{{total_vat_amount}}"),
             ("Receipt type", "{{type}}"),
@@ -194,8 +200,8 @@ CARDS = {
 def main():
     import os
 
-    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vctm", "proposed")
-    os.makedirs(out_dir, exist_ok=True)
+    # The cards sit next to this script, wherever it is checked out.
+    out_dir = os.path.dirname(os.path.abspath(__file__))
 
     for slug, spec in CARDS.items():
         path = os.path.join(out_dir, f"{slug}_card_v1.svg")

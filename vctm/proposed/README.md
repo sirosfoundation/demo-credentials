@@ -19,6 +19,7 @@ See sirosfoundation/ops-tasks#47 for the PA4 work these belong to.
 | `<slug>_card_v1.svg` | The individual templates, with `{{placeholder}}` text. |
 | `make_pa4_cards.py` | Generates the five cards. |
 | `make_pa4_sheet.py` | Composes the sheet and substitutes the sample data. |
+| `check_placeholders.py` | Checks every placeholder against the catalogue's schemas. Run it after any edit. |
 
 The generators are scaffolding. If the design is taken into Penpot, as the
 Student ID and mDL were, they can be deleted — they exist to keep five cards
@@ -58,14 +59,48 @@ on three things instead:
   row slide under the band, which is a mistake the first draft of these cards
   actually made.
 
+## Placeholders
+
+These are the complete sets. They are not invented here: `registry-cli`
+generates the WE BUILD type metadata from the catalogue's JSON Schemas and
+derives each `svg_id` from the claim's path - the leaf name, or the whole path
+joined with underscores when two claims share a leaf
+(sirosfoundation/registry-cli#62). `check_placeholders.py` reimplements that
+derivation and fails if a card uses anything else, so run it after any edit.
+
+| Credential | `svg_id` |
+| --- | --- |
+| EBWOID | `name` `id` `issuing_authority` `issuing_country` `date_of_expiry` `attestation_legal_category` `trust_anchor` |
+| EUCC | `legal_person_name` `legal_person_id` `legal_form_type` `legal_person_status` `registration_date` `registration_member_state` `authentic_source_name` `authentic_source_id` `issuance_date` `issuing_authority` `issuing_country` `issuing_jurisdiction` `legal_person_duration` `legal_representative` plus the `registered_address_*`, `share_capital` and `legal_person_activity` leaves |
+| VAT ID | `vat_id` `name` `organisation_type` `registered_eu_cross_border_transactions` `vat_id_authentic_source` `authentic_source_country` `location_status` `attestation_legal_category` `trust_anchor` |
+| eInvoice | `invoiceNumber` `issueDate` `amountDueForPayment` `InvoiceCurrencyCode` `invoiceTotalVatAmount` `invoiceLifecycleStatus` `seller_name` `buyer_name` `seller_vat` `buyer_vat` `seller_country` `buyer_country` and the rest of the top-level invoice fields |
+| eReceipt | `receipt_number` `original_receipt_number` `receipt_timestamp` `type` `total_price_inc_vat` `total_price_exc_vat` `total_vat_amount` `currency_iso_code` `free_text` |
+
+`buyer_name` and `seller_name` show the collision rule: `name` appears under
+both parents, so neither may use the short form.
+
+## Fields that cannot be bound yet
+
+Two fields these cards should show are unreachable, both because of how
+`registry-cli` reads the schema rather than anything about the design. Each
+has a hole in the layout where it belongs.
+
+- **The merchant name on eReceipt.** `merchant` is `{"$ref":
+  "#/$defs/merchant"}` and the generator does not resolve `$ref`, so it emits a
+  single `merchant` claim with no children and `merchant.name` does not exist.
+  This is the field a person uses to recognise a receipt, so the card falls back
+  to the receipt number as its headline until it is fixed.
+- **The validity dates on VAT ID.** `administrative_unit.validity_period` is an
+  array of objects, and the generator does not descend into array items, so
+  `start_date` and `end_date` do not exist. The correct claim path would be
+  `["administrative_unit", "validity_period", null, "start_date"]`.
+
+Filed as sirosfoundation/registry-cli#63 and sirosfoundation/registry-cli#64. Until they are fixed, a placeholder for
+either would render nothing, so neither appears on a card.
+
 ## Known gaps
 
 - Light mode only. Dark variants were optional on previous credentials
   (ops-tasks#18) and are left out here.
 - No list or thumbnail view, which previous credentials treated as a separate
   deliverable.
-- `vat-id` nests its real content under `administrative_unit`, so those
-  placeholders map to claim paths such as
-  `["administrative_unit", "vat_id"]` rather than to a top-level claim. The
-  `validity_period` entries are an array, so the dates are
-  `["administrative_unit", "validity_period", 0, "start_date"]`.
