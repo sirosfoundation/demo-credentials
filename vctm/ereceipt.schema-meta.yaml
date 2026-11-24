@@ -1,0 +1,19 @@
+# Schema metadata for ereceipt (WE BUILD eReceipt, rb-e-receipt)
+#
+#   attestation_los: rb-e-receipt states no level of assurance. Issued by the
+#   merchant's wallet, so the same reasoning as einvoice applies: the issuer
+#   is identified by an EBWOID and "high" follows that chain, not the
+#   receipt's content.
+#
+#   binding_type: "cnf" - holder key binding by JWK, establishing proof of
+#   possession (rb-e-receipt section 4.1.4).
+attestation_los: high
+binding_type: cnf
+
+# The "version" field of e-receipt-sd-jwt.json, which is the artefact this
+# metadata is generated from. The rulebook itself is at 2.2 (its version
+# history, 2026-09-28) - an upstream divergence, recorded here so the number
+# below is not mistaken for the rulebook's.
+version: "2.0.0"
+
+rulebook_uri: https://github.com/webuild-consortium/webuild-attestation-rulebooks-catalog/tree/main/rulebooks/rb-e-receipt
