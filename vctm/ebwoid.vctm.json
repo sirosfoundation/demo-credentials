@@ -1,0 +1,102 @@
+{
+  "vct": "uri:eu.ebw.oid.1",
+  "name": "European Business Wallet Owner Identification Data",
+  "description": "Identifies the owner of a European Business Wallet - an economic operator or public sector body - by the unique identifier and official name held by the authentic source that issued it.",
+  "display": [
+    {
+      "locale": "en-US",
+      "name": "Business Wallet Owner ID",
+      "description": "Identifies the organisation that owns this European Business Wallet.",
+      "rendering": {
+        "simple": {
+          "background_color": "#1a365d",
+          "text_color": "#ffffff"
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "path": ["id"],
+      "mandatory": true,
+      "sd": "never",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Organisation identifier",
+          "description": "Cross-border unique identifier of the wallet owner under Article 9 of the European Business Wallet proposal: the EUID where available, otherwise a similarly constructed per-issuer identifier, such as SEBOLREG.123456789."
+        }
+      ]
+    },
+    {
+      "path": ["name"],
+      "mandatory": true,
+      "sd": "never",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Organisation name",
+          "description": "Official name of the wallet owner, taken from the relevant register or official record."
+        }
+      ]
+    },
+    {
+      "path": ["attestation_legal_category"],
+      "mandatory": true,
+      "sd": "never",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Attestation category",
+          "description": "Legal category under which this attestation is issued: QEAA or PuB-EAA."
+        }
+      ]
+    },
+    {
+      "path": ["date_of_expiry"],
+      "mandatory": false,
+      "sd": "never",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Expiry date",
+          "description": "Administrative expiry date, for when administrative validity differs from the credential's technical expiry."
+        }
+      ]
+    },
+    {
+      "path": ["issuing_authority"],
+      "mandatory": true,
+      "sd": "never",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Issuing authority",
+          "description": "Name of the administrative authority, the Commission for Union entities, or the qualified trust service provider that issued this attestation."
+        }
+      ]
+    },
+    {
+      "path": ["issuing_country"],
+      "mandatory": true,
+      "sd": "never",
+      "display": [
+        {
+          "locale": "en-US",
+          "label": "Issuing country",
+          "description": "ISO 3166-1 alpha-2 code of the country or territory of the issuing provider."
+        }
+      ]
+    },
+    {
+      "path": ["status"],
+      "mandatory": false,
+      "sd": "never"
+    },
+    {
+      "path": ["trust_anchor"],
+      "mandatory": false,
+      "sd": "never"
+    }
+  ]
+}

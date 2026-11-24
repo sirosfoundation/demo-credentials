@@ -11,6 +11,7 @@ for testing and development purposes.
 |---|---|---|
 | Demo 1 | Low | cnf |
 | Diploma | Substantial | cnf |
+| EBWOID (WE BUILD ds001) | High | cnf |
 | EHIC | High | cnf |
 | PID (ARF 1.5) | High | cnf |
 | PID (Rulebook 1.5) | High | cnf |

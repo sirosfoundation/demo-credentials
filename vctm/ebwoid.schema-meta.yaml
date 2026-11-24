@@ -1,0 +1,28 @@
+# Schema metadata for ebwoid
+# (European Business Wallet - Owner Identification Data, WE BUILD ds001)
+#
+# Both fields below are TS11 governance decisions rather than facts derivable
+# from the rulebook, and rb-ebwoid section 7.1 explicitly records binding as
+# "TO AGREE". The reasoning is written down here so a later decision is a
+# one-line change rather than an excavation:
+#
+#   attestation_los: the rulebook states no level of assurance. EBWOID is
+#   issued as a PuB-EAA or QEAA by an authentic source notified to the
+#   Commission (EBW proposal Article 8(2)), which puts it on the same footing
+#   as the other register-sourced credentials published here (PID, EHIC,
+#   Siros ID), all of which are "high".
+#
+#   binding_type: the schema requires cnf.jwk, and rb-ebwoid section 7.1 says
+#   the cnf claim expresses key binding, so "cnf". The same section leaves
+#   "device-bound" open; settling that is what would change this value.
+attestation_los: high
+binding_type: cnf
+
+# Tracks the rulebook and schema artefact, both at 1.1.0 (rb-ebwoid changelog,
+# and the "version" field of ds001-ebwoid-sd-jwt.json). Note that section 3.1
+# of the rulebook calls the same artefact 1.0.0 - an upstream inconsistency.
+version: "1.1.0"
+
+# The authoritative rulebook is maintained upstream by WE BUILD WP4, so point
+# at it directly instead of shipping a local copy that would drift.
+rulebook_uri: https://github.com/webuild-consortium/webuild-attestation-rulebooks-catalog/tree/main/rulebooks/rb-ebwoid
