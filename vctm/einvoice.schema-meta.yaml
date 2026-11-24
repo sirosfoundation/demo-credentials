@@ -1,0 +1,21 @@
+# Schema metadata for einvoice (WE BUILD eInvoice Attestation, rb-eInvoice)
+#
+#   attestation_los: rb-eInvoice states no level of assurance. An eInvoice is
+#   issued by the Seller's own Business Wallet rather than by a notified
+#   authentic source, which is a weaker footing than the register-sourced
+#   credentials here - but the issuer is itself identified by an EBWOID, so
+#   "high" follows that chain rather than the invoice's own content. This is
+#   the value most worth revisiting once PA4 settles who issues an eInvoice;
+#   sirosfoundation/siros-id-stack#29 tracks that this demo issues it from a
+#   datastore instead.
+#
+#   binding_type: "cnf" - the schema's cnf claim carries holder key-binding
+#   confirmation, proof of possession by the Supplier's EBW.
+attestation_los: high
+binding_type: cnf
+
+# The rulebook's own version history. eInvoice-sd-jwt.json carries no
+# "version" field.
+version: "1.1"
+
+rulebook_uri: https://github.com/webuild-consortium/webuild-attestation-rulebooks-catalog/tree/main/rulebooks/rb-eInvoice

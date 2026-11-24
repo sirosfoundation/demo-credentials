@@ -1,0 +1,25 @@
+# Schema metadata for vat_id (EUDI VAT ID Attestation, WE BUILD rb-vat-id)
+#
+# Neither field below is derivable from the rulebook, so the reasoning is
+# written down here rather than left to be excavated later:
+#
+#   attestation_los: rb-vat-id states no level of assurance. The attestation
+#   is issued by a tax administration acting as the authentic source, which
+#   puts it on the same footing as the other register-sourced credentials
+#   published here (PID, EHIC, Siros ID, EBWOID), all of which are "high".
+#
+#   binding_type: the schema requires cnf, so "cnf". Note this credential is
+#   deliberately NOT device-bound - requirement EW-DM-12-038 reads "Non
+#   device-bound by design", justified in section 7.1 - so "cnf" here means
+#   holder key binding and nothing stronger.
+attestation_los: high
+binding_type: cnf
+
+# The rulebook's own version history. vat-id-sd-jwt.json carries no "version"
+# field, unlike the other WE BUILD schemas, so there is nothing to cross-check
+# this against.
+version: "0.8"
+
+# Maintained upstream by WE BUILD WP4; pointing at it rather than shipping a
+# local copy that would drift.
+rulebook_uri: https://github.com/webuild-consortium/webuild-attestation-rulebooks-catalog/tree/main/rulebooks/rb-vat-id

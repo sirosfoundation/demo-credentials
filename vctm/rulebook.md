@@ -12,9 +12,12 @@ for testing and development purposes.
 | Demo 1 | Low | cnf |
 | Diploma | Substantial | cnf |
 | EHIC | High | cnf |
+| eInvoice (WE BUILD rb-eInvoice) | High | cnf |
+| eReceipt (WE BUILD rb-e-receipt) | High | cnf |
 | PID (ARF 1.5) | High | cnf |
 | PID (Rulebook 1.5) | High | cnf |
 | Student ID | Basic | Key |
+| VAT ID (WE BUILD rb-vat-id) | High | cnf |
 
 ## Issuance Policy
 
