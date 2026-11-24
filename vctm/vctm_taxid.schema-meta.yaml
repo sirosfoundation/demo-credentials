@@ -1,8 +1,0 @@
-# Schema metadata for vctm_pid_arf_1_8 (Person Identification Data - ARF 1.8)
-attestation_los: high
-binding_type: cnf
-version: "1.1"
-
-# Maintained upstream by WE BUILD WP4; pointing at it rather than shipping a
-# local copy that would drift.
-rulebook_uri: https://github.com/webuild-consortium/webuild-attestation-rulebooks-catalog/tree/main/rulebooks/rb-taxid
